@@ -4,15 +4,21 @@ import coreModule from './core/core.module';
 import peopleDetailModule from './people_detail/peopleDetail.module';
 import peopleListModule from './people_list/peopleList.module';
 
+import austinModule from './austin/austin.module';
+
 
 angular.module('peopleApp', [
         'ngRoute',
         coreModule.name,
         peopleDetailModule.name,
-        peopleListModule.name
+        peopleListModule.name,
+		austinModule.name
     ]).config(['$routeProvider',
         function($routeProvider) {
         $routeProvider.
+		 when('/austin', {
+            	template: '<austin-component></austin-component>'
+            }).
             when('/people', {
             template: '<pp-people-list></pp-people-list>'
             }).
