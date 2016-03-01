@@ -1,0 +1,6 @@
+# Files to ignore
+
+bower_components/
+node_modules/
+app/js/**/*.js
+app/js/**/*.js.map
