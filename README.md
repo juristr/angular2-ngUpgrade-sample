@@ -23,4 +23,4 @@ $ npm run tsc
 $ npm start
 ```
 
-..to run the application in the browser.
+..to run the application in the browser at `http://localhost:8000/app`.
